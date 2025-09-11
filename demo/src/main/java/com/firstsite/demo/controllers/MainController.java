@@ -1,4 +1,4 @@
-package com.firstsite.controllers;
+package com.firstsite.demo.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -13,6 +13,11 @@ public class MainController {
         model.addAttribute("name", "Главная страница");
         // вызываем шаблон по названию
         return "home";
+    }
+
+    @GetMapping("/about")
+    public String about(Model model) {
+        return "about";
     }
 
 }
