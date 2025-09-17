@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title th:text="{$title}"/>
+    <title th:text="${title}"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <div th:insert="blocks/styles :: style"></div>
+    <link th:insert="blocks/styles :: style">
 </head>
 <body>
     <header th:insert="blocks/header :: header"></header>
-    <p th:text="|Hello, {$name}!|" />
+    <p th:text="Hello" />
 </body>
 <div th:insert="blocks/footer :: footer"></div>
 </html>
